@@ -9,7 +9,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello Node.js Sample!\n');
+  res.send('Azure DevOps Pipelines - ' + process.env.APP_VARIABLE + '\n');
 });
 
 var port = process.env.PORT||PORT;
